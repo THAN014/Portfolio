@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* CSS for smooth scrolling and adjusting anchor link position */
+        html {
+            scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+            scroll-padding-top: 56px; /* Adjust this value based on your navbar's height */
+            /* The 56px is an approximate height for Bootstrap's default navbar.
+               If your navbar changes height, you might need to adjust this value. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid m-0 p-0">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">THANWA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projectSection">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Updated link to point to the new contact section -->
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Carousel Section (Home) -->
+        <!-- Added id="Home" for navigation linking -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/projectwebcss.png" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                        <h5>Project WEB CSS</h5>
+                        <p>เว็บไซต์สอนภาษา CSS</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/indept movie.png" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                        <h5>In Depth</h5>
+                        <p>หนังสั้นเกี่ยวกับการใช้หนี้</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Kids Classroom Google Classroom Header.png" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                        <h5>เจ้าของ Website</h5>
+                        <p>Thanwa Ketsuwan</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Project Section -->
+        <!-- Added id="projectSection" for navigation linking -->
+        <div class="container my-5" id="projectSection">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/projectwebcss.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project เว็บไซต์สอนภาษา CSS</h5>
+                            <p class="card-text">เว็บไซต์สอนภาษา CSS ที่มีแบบฝึกหัด หรือแบบทดสอบ ระหว่างเรียน</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/indept movie.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">หนังสั้น In Dept</h5>
+                            <p class="card-text">หนังสั้นเกี่ยวกับการติดพนันและการหาเงินมาใช้นี้ที่ยากลำบาก</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/Voxel art.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">R34 Voxel art</h5>
+                            <p class="card-text">งานศิลป์ รถ R34 แบบ Voxel</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of Project Section -->
+
+        <!-- Contact Section (New) -->
+        <!-- Added id="contact" for navigation linking -->
+        <div class="container my-5" id="contact">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form>
+                <div class="row">
+                    <!-- First Name Column -->
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                    </div>
+                    <!-- Last Name Column -->
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                    </div>
+                </div>
+                <!-- Email Address Row (full width) -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <!-- Message Textarea Row (full width) -->
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div> <!-- End of Contact Section -->
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2023 My Portfolio</p>
+            <p>Follow me on <a href="#" class="text-white">Twitter</a> | <a href="#" class="text-white">LinkedIn</a>
+            </p>
+        </footer>
+    </div> <!-- End of main container -->
+
+    <!-- Link to Bootstrap JavaScript bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
